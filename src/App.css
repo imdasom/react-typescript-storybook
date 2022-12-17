@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-rows: min-content auto;
+}
+
+.header {
+  display: block;
+  padding: 50px 0;
+}
+
+.component-box-container {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+
+.component-box {
+  height: fit-content;
+  border: 1px solid black;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: row;
+}
+
+.component-box h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.component-box h3 {
+  font-size: 15px;
+}
+
+.component-box input {
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  height: fit-content;
+  padding: 5px 10px;
+}
+
+.components {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+  grid-template-rows: repeat(auto-fill, minmax(50px,auto));
+  gap: 10px;
+}

@@ -54,6 +54,40 @@
   color: #80b5ff;
 }
 
+/* danger type */
+.button.danger {
+  background: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.button.danger:hover {
+  background: white;
+  color: #ff7b7b;
+  border: 1px solid #ff7b7b;
+}
+
+.button.danger.primary {
+  background: red;
+  color: white;
+}
+
+.button.danger.primary:hover {
+  background: #ff7b7b;
+  color: white;
+}
+
+.button.danger.text {
+  background: white;
+  color: red;
+  border: none;
+}
+
+.button.danger.text:hover {
+  background: #ffe4e4;
+  color: #ff7b7b;
+}
+
 /* size */
 .button.large {
   font-size: 15px;
