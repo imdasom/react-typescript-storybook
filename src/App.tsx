@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Button from '../src/components/Button/Button';
-import { AiFillCamera } from 'react-icons/ai';
+import { AiFillCamera, AiFillDollarCircle, AiFillRocket } from 'react-icons/ai';
+import Input from './components/Input/Step2.0/Input';
 
 function App(): JSX.Element {
+  const [name, setName] = useState('');
+  const [clearButtonValue, setClearButtonValue] = useState('');
+
   return (
     <div className={'container'}>
       <div className={'header'}>
@@ -54,6 +58,68 @@ function App(): JSX.Element {
               designType={'primary'}
               size={'small'}
               text={'Small Button'}
+            />
+          </div>
+        </div>
+        <div className={'component-box input'}>
+          <h2>Input</h2>
+          <h3>Default</h3>
+          <div className={'components block'}>
+            <Input
+              type={'text'}
+              placeholder={'이름을 입력하세요'}
+              value={name}
+              onChange={setName}
+            />
+            <Input type={'email'} placeholder={'이메일을 입력하세요'} />
+          </div>
+          <h3>Size</h3>
+          <div className={'components block'}>
+            <Input type={'text'} placeholder={'Small Input'} size={'small'} />
+            <Input type={'email'} placeholder={'Large Input'} size={'large'} />
+          </div>
+          <h3>Prefix, Suffix</h3>
+          <div className={'components block'}>
+            <Input
+              type={'text'}
+              placeholder={'URL을 입력하세요'}
+              prefix={'https://'}
+            />
+            <Input
+              type={'text'}
+              value={100000}
+              prefix={<AiFillDollarCircle />}
+              suffix={'달러'}
+            />
+          </div>
+          <h3>AddOnBefore, AddOnAfter</h3>
+          <div className={'components block'}>
+            <Input
+              type={'text'}
+              placeholder={'URL을 입력하세요'}
+              addOnBefore={'https://'}
+            />
+            <Input
+              type={'text'}
+              placeholder={'URL을 입력하세요'}
+              addOnAfter={<AiFillRocket />}
+            />
+            <Input
+              type={'text'}
+              value={100000}
+              addOnBefore={<AiFillDollarCircle />}
+              addOnAfter={'달러'}
+            />
+          </div>
+          <h3>Clear Button</h3>
+          <div className={'components block'}>
+            <Input
+              type={'text'}
+              placeholder={'포커스되면 clear button이 나타나요'}
+              clear
+              suffix={'원'}
+              value={clearButtonValue}
+              onChange={setClearButtonValue}
             />
           </div>
         </div>
