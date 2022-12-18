@@ -32,6 +32,7 @@ legend{padding:0}
 ol,ul,menu{list-style:none;margin:0;padding:0}
 textarea{resize:vertical}
 input::placeholder,textarea::placeholder{opacity:1;color:theme('colors.gray.400',#9ca3af)}
+input {border: none;}
 input:focus {outline:none;}
 button,[role="button"]{cursor:pointer}:disabled{cursor:default}
 img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}
