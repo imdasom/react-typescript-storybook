@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+}
+
+.tooltipContainer {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  background: pink;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.tooltipTail {
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -10px;
+  left: 30%;
+}
+
+.targetContainer:hover ~ .tooltipContainer  {
+  display: unset;
+}

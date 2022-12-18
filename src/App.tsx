@@ -3,6 +3,7 @@ import './App.css';
 import Button from '../src/components/Button/Button';
 import { AiFillCamera, AiFillDollarCircle, AiFillRocket } from 'react-icons/ai';
 import Input from './components/Input/Step2.0/Input';
+import Tooltip from './components/Tooltip/Step1.0/Tooltip';
 
 function App(): JSX.Element {
   const [name, setName] = useState('');
@@ -122,6 +123,14 @@ function App(): JSX.Element {
               onChange={setClearButtonValue}
             />
           </div>
+        </div>
+      </div>
+      <div className={'component-box'}>
+        <h2>Tooltip</h2>
+        <div className={'components'}>
+          <Tooltip tooltip={<div>tooltip content!</div>}>
+            The simplest usage. Hover me
+          </Tooltip>
         </div>
       </div>
     </div>
