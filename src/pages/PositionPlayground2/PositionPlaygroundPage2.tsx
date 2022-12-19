@@ -133,14 +133,21 @@ const PositionPlaygroundPage2 = () => {
           </div>
         </div>
       </div>
-      <div className={styles.floatBox} onClick={() => setHint(!hint)}>
+      <div style={{ position: 'fixed', top: 0, right: 0 }}>
+        <div onClick={() => setHint(!hint)} style={{ fontSize: 20 }}>
+          {hint ? '힌트끄기' : '힌트보기'}
+        </div>
+      </div>
+      <div
+        className={styles.floatBox}
+        onClick={() => alert('Merry Christmas :)')}
+      >
         <div className={styles.guide}>position: fixed</div>
         <img
           src={
             'https://iconvulture.com/wp-content/uploads/2019/11/Santa-Claus-flat.svg'
           }
         />
-        <div style={{ fontSize: 20 }}>{hint ? '힌트끄기' : '힌트보기'}</div>
       </div>
     </div>
   );
