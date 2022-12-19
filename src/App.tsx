@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ComponentLibraryPage from './pages/ComponentLibraryPage';
 import PositionPlaygroundPage from './pages/PositionPlayground/PositionPlaygroundPage';
+import PositionPlaygroundPage2 from './pages/PositionPlayground2/PositionPlaygroundPage2';
 
 function App(): JSX.Element {
   return (
@@ -15,6 +16,10 @@ function App(): JSX.Element {
         <Route
           path="/position-playground"
           element={<PositionPlaygroundPage />}
+        ></Route>
+        <Route
+          path="/position-playground-2"
+          element={<PositionPlaygroundPage2 />}
         ></Route>
       </Routes>
     </BrowserRouter>

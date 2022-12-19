@@ -1,0 +1,162 @@
+.container.hideHint .guide {
+  display: none;
+}
+
+.container {
+  background: #eeeeee;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  height: 300px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff4c22;
+  color: white;
+}
+
+.headerTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .title {
+  font-size: 50px;
+}
+
+.header .description {
+  font-size: 12px;
+}
+
+.guide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.mainBox {
+  position: relative;
+}
+
+.absoluteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBox .circleContainer {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBox .circle {
+  border-radius: 50%;
+  background: #ffffff5c;
+  width: 100%;
+  height: 100%;
+}
+
+.mainBox .mainText {
+  font-size: 80px;
+  position: relative;
+}
+
+.mainBox .mainText .guide {
+  top: -30px;
+  left: -5px;
+}
+
+.subBox {
+  height: 1000px;
+  background: #2e2e2e;
+  position: relative;
+}
+
+.floatBox {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.floatBox img {
+  width: 150px;
+  height: 150px;
+}
+
+.floatBox:hover {
+  opacity: 0.5;
+}
+
+.subBox .circleContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subBox .circle {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: #ffffff5c;
+  position: relative;
+  left: 150px;
+}
+
+.subBox .circle2 {
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: #ffffff5c;
+  position: relative;
+  right: 100px;
+  top: 100px;
+}
+
+.subBox .content {
+  position: relative;
+  width: 1000px;
+  font-size: 12px;
+}
+
+.subBox .circleContainer .guide {
+  top: 60px;
+  left: 70px;
+}
+
+.subBox .content .guide {
+  top: -60px;
+  left: -10px;
+}
+
+.floatBox .guide {
+  top: -40px;
+  left: 30px;
+}
