@@ -8,7 +8,6 @@ import ModalStep2TestPage from '../components/Modal/Step2/ModalTestPage';
 import ModalStep3TestPage from '../components/Modal/Step3/ModalTestPage';
 
 const ComponentLibraryPage = () => {
-  const [name, setName] = useState('');
   const [clearButtonValue, setClearButtonValue] = useState('');
 
   return (
@@ -18,7 +17,7 @@ const ComponentLibraryPage = () => {
         <p>Component implementation project with storybook.</p>
       </div>
       <div className={'component-box-container'}>
-        <div className={'component-box'}>
+        <div className={'component-box'} id={'button'}>
           <h2>Button</h2>
           <h3>Type</h3>
           <div className={'components'}>
@@ -64,16 +63,12 @@ const ComponentLibraryPage = () => {
             />
           </div>
         </div>
-        <div className={'component-box input'}>
+        <div className={'component-box input'} id={'input'}>
           <h2>Input</h2>
+          <h3>[Step1.0]</h3>
           <h3>Default</h3>
           <div className={'components block'}>
-            <Input
-              type={'text'}
-              placeholder={'이름을 입력하세요'}
-              value={name}
-              onChange={setName}
-            />
+            <Input type={'text'} placeholder={'이름을 입력하세요'} />
             <Input type={'email'} placeholder={'이메일을 입력하세요'} />
           </div>
           <h3>Size</h3>
@@ -81,6 +76,7 @@ const ComponentLibraryPage = () => {
             <Input type={'text'} placeholder={'Small Input'} size={'small'} />
             <Input type={'email'} placeholder={'Large Input'} size={'large'} />
           </div>
+          <h3>[Step1.5]</h3>
           <h3>Prefix, Suffix</h3>
           <div className={'components block'}>
             <Input
@@ -95,6 +91,7 @@ const ComponentLibraryPage = () => {
               suffix={'달러'}
             />
           </div>
+          <h3>[Step2.0]</h3>
           <h3>AddOnBefore, AddOnAfter</h3>
           <div className={'components block'}>
             <Input
@@ -127,7 +124,7 @@ const ComponentLibraryPage = () => {
           </div>
         </div>
       </div>
-      <div className={'component-box'}>
+      <div className={'component-box'} id={'tooltip'}>
         <h2>Tooltip</h2>
         <div className={'components'}>
           <Tooltip tooltip={<div>tooltip content!</div>}>
