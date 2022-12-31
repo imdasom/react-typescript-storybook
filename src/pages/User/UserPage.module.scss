@@ -1,0 +1,28 @@
+.container {
+  background: #80b5ff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appContainer {
+  width: 400px;
+  height: 80vh;
+  border: 1px solid black;
+  overflow: auto;
+  border-radius: 50px;
+  background: white;
+}
+
+.pageTitle {
+  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  padding: 10px;
+  box-shadow: 0 4px 2px -2px #f1f1f1;
+}
