@@ -3,6 +3,9 @@ import Button from '../components/Button/Button';
 import { AiFillCamera, AiFillDollarCircle, AiFillRocket } from 'react-icons/ai';
 import Input from '../components/Input/Step2.0/Input';
 import Tooltip from '../components/Tooltip/Step1.0/Tooltip';
+import ModalStep1TestPage from '../components/Modal/Step1/ModalTestPage';
+import ModalStep2TestPage from '../components/Modal/Step2/ModalTestPage';
+import ModalStep3TestPage from '../components/Modal/Step3/ModalTestPage';
 
 const ComponentLibraryPage = () => {
   const [name, setName] = useState('');
@@ -130,6 +133,14 @@ const ComponentLibraryPage = () => {
           <Tooltip tooltip={<div>tooltip content!</div>}>
             The simplest usage. Hover me
           </Tooltip>
+        </div>
+      </div>
+      <div className={'component-box'} id={'modal'}>
+        <h2>Modal</h2>
+        <div className={'components'}>
+          <ModalStep1TestPage />
+          <ModalStep2TestPage />
+          <ModalStep3TestPage />
         </div>
       </div>
     </div>
