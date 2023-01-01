@@ -15,6 +15,10 @@
 .outerContainer:hover {
   outline: 1px solid #1677ff;
   outline-offset: -1px;
+
+  &.readOnly {
+    outline: 1px solid #e1e1e1;
+  }
 }
 
 .addOnBefore .inputContainer {
@@ -28,7 +32,6 @@
 }
 
 .inputContainer {
-  border: 1px solid #e1e1e1;
   border-radius: 5px;
   height: fit-content;
   padding: 5px 10px;
@@ -42,6 +45,7 @@
 .input {
   flex: 1;
   width: 100%;
+  background: transparent;
 }
 
 .prefix {
@@ -50,6 +54,11 @@
 
 .suffix {
   margin-left: 8px;
+}
+
+.readOnly {
+  background: #f4f4f4;
+  color: #848484;
 }
 
 .addOnContainer {
@@ -70,7 +79,6 @@
   font-size: 18px;
 }
 
-
 /* clear button style */
 .closeCircle {
   display: none;
@@ -81,3 +89,4 @@
 .input:focus ~ .closeCircle {
   display: unset;
 }
+

@@ -1,12 +1,12 @@
 .container {
   width: 100%;
-  height: 100vh;
   display: grid;
   gap: 30px;
   grid-auto-flow: row;
   justify-content: center;
   align-items: flex-start;
   grid-template-rows: min-content auto;
+  padding-bottom: 1000px;
 }
 
 .header {

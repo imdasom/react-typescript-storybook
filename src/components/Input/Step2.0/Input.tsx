@@ -31,6 +31,7 @@ const Input: React.FC<InputProps> = ({
     styles[size],
     addOnBefore ? styles.addOnBefore : '',
     addOnAfter ? styles.addOnAfter : '',
+    props.readOnly ? styles.readOnly : '',
     className,
   ].join(' ');
   return (

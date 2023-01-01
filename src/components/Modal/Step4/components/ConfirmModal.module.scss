@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.actionButtons {
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+}

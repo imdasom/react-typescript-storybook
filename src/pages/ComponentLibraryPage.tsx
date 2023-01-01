@@ -6,6 +6,7 @@ import Tooltip from '../components/Tooltip/Step1.0/Tooltip';
 import ModalStep1TestPage from '../components/Modal/Step1/ModalTestPage';
 import ModalStep2TestPage from '../components/Modal/Step2/ModalTestPage';
 import ModalStep3TestPage from '../components/Modal/Step3/ModalTestPage';
+import ModalStep4TestPage from '../components/Modal/Step4/ModalTestPage';
 
 const ComponentLibraryPage = () => {
   const [clearButtonValue, setClearButtonValue] = useState('');
@@ -138,6 +139,10 @@ const ComponentLibraryPage = () => {
           <ModalStep1TestPage />
           <ModalStep2TestPage />
           <ModalStep3TestPage />
+        </div>
+        <h2 id={'modal-step4'}>Modal Step4</h2>
+        <div>
+          <ModalStep4TestPage />
         </div>
       </div>
     </div>
