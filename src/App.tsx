@@ -9,6 +9,10 @@ import CocktailListPage1 from './pages/CocktailList/Step1/index.page';
 import CocktailListPage2 from './pages/CocktailList/Step2/index.page';
 import CocktailListPage3 from './pages/CocktailList/Step3/index.page';
 import CocktailListPage4 from './pages/CocktailList/Step4/index.page';
+import UserListPage1 from './pages/user-list/step1/index.page';
+import UserListPage2 from './pages/user-list/step2/index.page';
+import UserListPage3 from './pages/user-list/step3/index.page';
+import UserListPage4 from './pages/user-list/step4/index.page';
 
 function App(): JSX.Element {
   return (
@@ -43,6 +47,10 @@ function App(): JSX.Element {
           path="/list/cocktail/step4"
           element={<CocktailListPage4 />}
         ></Route>
+        <Route path="/list/user/step1" element={<UserListPage1 />}></Route>
+        <Route path="/list/user/step2" element={<UserListPage2 />}></Route>
+        <Route path="/list/user/step3" element={<UserListPage3 />}></Route>
+        <Route path="/list/user/step4" element={<UserListPage4 />}></Route>
       </Routes>
     </BrowserRouter>
   );

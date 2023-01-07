@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 /**
  * 훅은 클로져와 매우 깊은 관계가 있습니다
